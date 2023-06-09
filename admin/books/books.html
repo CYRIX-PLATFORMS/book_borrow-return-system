@@ -137,53 +137,6 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="shelf">
-            <h2>Science Fiction</h2>
-            <div class="book">
-                <h3>The Hunger Games</h3>
-                <p>by Suzanne Collins</p>
-                <span class="category">Science Fiction</span>
-                <button class="delete-btn">Delete</button>
-            </div>
-            <div class="book">
-                <h3>Ender's Game</h3>
-                <p>by Orson Scott Card</p>
-                <span class="category">Science Fiction</span>
-                <button class="delete-btn">Delete</button>
-            </div>
-        </div>
-        <div class="shelf">
-            <h2>History</h2>
-            <div class="book">
-                <h3>The Guns of August</h3>
-                <p>by Barbara Tuchman</p>
-                <span class="category">History</span>
-                <button class="delete-btn">Delete</button>
-            </div>
-            <div class="book">
-                <h3>1776</h3>
-                <p>by David McCullough</p>
-                <span class="category">History</span>
-                <button class="delete-btn">Delete</button>
-            </div>
-        </div>
-        <div class="shelf">
-            <h2>Biography</h2>
-            <div class="book">
-                <h3>Steve Jobs</h3>
-                <p>by Walter Isaacson</p>
-                <span class="category">Biography</span>
-                <button class="delete-btn">Delete</button>
-            </div>
-            <div class="book">
-                <h3>Becoming</h3>
-                <p>by Michelle Obama</p>
-                <span class="category">Biography</span>
-                <button class="delete-btn">Delete</button>
-            </div>
-        </div>
-    </div>
     <div class="add-form">
         <h2>Add a Book</h2>
         <form method="post" action="">
@@ -194,14 +147,46 @@
             <label for="category">Category:</label>
             <select id="category" name="category" required>
                 <option value="">-- Select a Category --</option>
-                <option value="Science Fiction">Science Fiction</option>
-                <option value="History">History</option>
-                <option value="Biography">Biography</option>
+                <option value="Frustration">Frustration</option>
+                <option value="Programming">Programming</option>
             </select>
             <input type="submit" value="Add Book">
             <div class="error"></div>
         </form>
     </div>
+    <div class="container">
+        <div class="shelf">
+            <h2>Frustration</h2>
+            <div class="book">
+                <h3>Tools and Numerical Methods</h3>
+                <p>by Dr. Wati</p>
+                <span class="category">Frustration</span>
+                <button class="delete-btn">Delete</button>
+            </div>
+            <div class="book">
+                <h3>Physics for Engineering</h3>
+                <p>by Dr. Wati</p>
+                <span class="category">Frustration</span>
+                <button class="delete-btn">Delete</button>
+            </div>
+        </div>
+        <div class="shelf">
+            <h2>Programming</h2>
+            <div class="book">
+                <h3>C for dummies</h3>
+                <p>by Dennis Ritchie</p>
+                <span class="category">Programming</span>
+                <button class="delete-btn">Delete</button>
+            </div>
+            <div class="book">
+                <h3>OOP with Java</h3>
+                <p>by Mr. TIYDZE Nelson</p>
+                <span class="category">Programming</span>
+                <button class="delete-btn">Delete</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
