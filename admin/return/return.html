@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Library Book Return</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 500px;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #333;
+        }
+
+        .error {
+            color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" action="">
+        <h1>Library Book Return</h1>
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="student-name" name="student-name" required>
+        <label for="book-title">Book Title:</label>
+        <input type="text" id="book-title" name="book-title" required>
+        <label for="borrow-date">Borrow Date:</label>
+        <input type="date" id="borrow-date" name="borrow-date" required>
+        <label for="return-date">Return Date:</label>
+        <input type="date" id="return-date" name="return-date" required>
+        <input type="submit" value="Return Book">
+        <div class="error"></div>
+    </form>
+</body>
+
+</html>

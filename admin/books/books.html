@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Library Book Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+
+        .shelf {
+            width: 100%;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .shelf:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .book {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .book h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .book p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .category {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            background-color: #ccc;
+            font-size: 12px;
+            margin-right: 5px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .delete-btn {
+            background-color: #f44336;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .delete-btn:hover {
+            background-color: #d32f2f;
+        }
+
+        .add-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 500px;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        select {
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #333;
+        }
+
+        .error {
+            color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="shelf">
+            <h2>Science Fiction</h2>
+            <div class="book">
+                <h3>The Hunger Games</h3>
+                <p>by Suzanne Collins</p>
+                <span class="category">Science Fiction</span>
+                <button class="delete-btn">Delete</button>
+            </div>
+            <div class="book">
+                <h3>Ender's Game</h3>
+                <p>by Orson Scott Card</p>
+                <span class="category">Science Fiction</span>
+                <button class="delete-btn">Delete</button>
+            </div>
+        </div>
+        <div class="shelf">
+            <h2>History</h2>
+            <div class="book">
+                <h3>The Guns of August</h3>
+                <p>by Barbara Tuchman</p>
+                <span class="category">History</span>
+                <button class="delete-btn">Delete</button>
+            </div>
+            <div class="book">
+                <h3>1776</h3>
+                <p>by David McCullough</p>
+                <span class="category">History</span>
+                <button class="delete-btn">Delete</button>
+            </div>
+        </div>
+        <div class="shelf">
+            <h2>Biography</h2>
+            <div class="book">
+                <h3>Steve Jobs</h3>
+                <p>by Walter Isaacson</p>
+                <span class="category">Biography</span>
+                <button class="delete-btn">Delete</button>
+            </div>
+            <div class="book">
+                <h3>Becoming</h3>
+                <p>by Michelle Obama</p>
+                <span class="category">Biography</span>
+                <button class="delete-btn">Delete</button>
+            </div>
+        </div>
+    </div>
+    <div class="add-form">
+        <h2>Add a Book</h2>
+        <form method="post" action="">
+            <label for="book-title">Book Title:</label>
+            <input type="text" id="book-title" name="book-title" required>
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required>
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="">-- Select a Category --</option>
+                <option value="Science Fiction">Science Fiction</option>
+                <option value="History">History</option>
+                <option value="Biography">Biography</option>
+            </select>
+            <input type="submit" value="Add Book">
+            <div class="error"></div>
+        </form>
+    </div>
+</body>
+
+</html>

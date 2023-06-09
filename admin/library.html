@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=7">
+	<title>Admin Panel</title>
+	<link rel="stylesheet" href="library.css">
+</head>
+
+<body>
+	<header>
+		<h1>Borrow-Return - ADMIN PANEL</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="./books/books.html">Book Available</a></li>
+			<li><a href="./borrow/borrow.html">Borrowed</a></li>
+			<li><a href="./return/return.html">Return</a></li>
+			<li><a href="./registration/registration.html">Register Student</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h2>Borrow Books</h2>
+		<form>
+			<label for="book">Select Book:</label>
+			<select id="book" name="book">
+				<option value="">-- Select Book --</option>
+				<option value="book1">Book 1</option>
+				<option value="book2">Book 2</option>
+				<option value="book3">Book 3</option>
+			</select>
+			<br>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name">
+			<br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email">
+			<br>
+			<label for="phone">Phone:</label>
+			<input type="tel" id="phone" name="phone">
+			<br>
+			<input type="submit" value="Borrow">
+		</form>
+	</main>
+	<footer>
+		<p>&copy; 2023 Library Management System</p>
+	</footer>
+</body>
+
+</html>
